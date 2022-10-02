@@ -4,7 +4,7 @@ body {
 
 .box {
     background-color: white;
-    margin: 50px auto; 
+    margin: 600px auto 0;  
     width: 960px;
     text-align: center;
     /* 이 밑으론 디자인 적인 내용 (설명 없음) */
@@ -23,4 +23,8 @@ body {
 
 .box p {
     padding: 3rem;
+}
+
+.box-cover {
+    margin-top: -500px;
 }
