@@ -1,0 +1,42 @@
+.profile-contents {
+    background-color: rgba(102, 102, 102, 0.142);
+    padding: 20px;
+}
+
+.profile-content-box {
+    background-color: white;
+    padding: 15px 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 1px 2px 3px #00000070;
+}
+
+.profile-content-box + .profile-content-box {
+    margin-top: 20px;
+}
+
+.profile-content-title {
+    color: rgb(245, 101, 125);
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.profile-content::before {
+    content: " ";
+    height: 100%;
+    border-left: 4px solid rgba(102, 102, 102, 0.112);
+    padding-right: 10px;
+}
+
+.profile-content:hover::before {
+    border-left-color: rgba(245, 101, 125, 0.596);
+}
+
+.profile-content:hover {
+    color:rgba(245, 101, 125, 0.596);
+}
+
+.profile-content-icon {
+    padding: 10px;
+}

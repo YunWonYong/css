@@ -1,0 +1,49 @@
+.profile-header {
+    background-image: url(../../img/cover.png);
+    background-size: cover; /* inherit: no, initValue: auto 이미지의 고유 비율을 유지시킴 */
+    text-align: center; /* inherit: ok, initialValue: direction property reference */
+    color: white;
+    height: 450px;
+}
+
+.profile-header-img {
+    border: 5px solid white;
+    border-radius: 16em / 7em; /* inherit: no, initialValue: 0 */
+    /*
+        잘 이해는 안 됐지만
+        16em / 7em은 나누는게 아니고
+        border-top-left-radius: 16em(장축) 7em(단축);
+        border-top-right-radius: 16em 7em;
+        border-bottom-right-radius: 16em 7em;
+        border-bottom-left-radius: 16em 7em;
+        축약어다.
+    */
+    margin-top: 80px;
+    width: 150px;
+}
+
+.profile-header-title {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 3px; /* inherit: ok, initalValue: normal */
+    margin-bottom: 25px;
+}
+
+.profile-header-description::before {
+    content: " ";
+    position: absolute;
+    top: -10px; 
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    margin: 0 -5px;
+    padding: 0 5px;
+}
+
+.profile-header-description {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    position: relative;
+    display: inline-block;
+}

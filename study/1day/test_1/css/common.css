@@ -1,0 +1,27 @@
+body, h2, h3, p {
+    margin: initial;
+}
+
+body {
+    background-image: url(../img/background.png);
+}
+
+.wrap {
+    width: 800px;
+    margin: 50px auto 0;
+    background-color: white;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.left::after,
+.right::after {
+    content: " ";
+    clear: both;
+}
