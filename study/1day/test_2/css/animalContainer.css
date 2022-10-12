@@ -1,6 +1,35 @@
-.animal-container {
-    min-width: 100vw;
-    min-height: 100vh;
+.animal-profile-container {
     background-color: cornflowerblue;
-    position: relative;
+    width: 100%;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.animal-profile-box {
+    width: 300px; 
+    display: inline-block;
+}
+
+.animal-profile-contents {
+    background-color: rgb(151 99 55);
+    background-image: url(../../images/green.png);
+    background-repeat: no-repeat; /* initialValue: repeat, inherited: no */
+    background-size: contain; /* initialValue: auto, inherited: no */
+    padding: 50px 30px 30px;
+    border-radius: 0 0 15px 15px;
+    text-align: initial;
+    margin-bottom: 50px;
+}
+
+.animal-profile-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin: 1.5em 0 1em;
+}
+
+.animal-profile-description {
+    font-size: 15px;
+    font-weight: 100;
+    color: #d7d7d7;
 }
