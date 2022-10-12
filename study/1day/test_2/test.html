@@ -10,85 +10,37 @@
 
         <link href="./css/common.css" rel="stylesheet" />
         <link href="./css/animalContainer.css" rel="stylesheet" />
-
-        <script>
-            let firstImg = null;
-            const imgChange = (target) => {
-                const src = target.getAttribute("src");
-                const changeImgNumber = "0" + getRandomNumber(9);
-                if (firstImg === null) {
-                    firstImg = src;
-                }
-                target.setAttribute("src", src.replace(/[0-9]{2}/, changeImgNumber))
-            };
-
-            const getRandomNumber = (max, min = 0) => Math.floor(Math.random() * max) + 1 + min;
-
-            const textAppend = (target) => {
-                if (!target) {
-                    return;
-                }
-                target.appendChild(getDescription());
-            };
-
-            const getDescription = () => {
-                const pTag = document.createElement("P");
-                pTag.classList.add("animal-profile-description");
-                pTag.innerText = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec";
-                return pTag;
-            };
-
-            const boxResize = (target) => {
-                target.style.width = getRandomNumber(200, 300) + "px";
-            };
-        </script>
+        <script src="./js/testBox.js" defer></script>
     </head>
     <body>
-        <article class="test-btn-box">
-            <button 
-                type="button"
-                onclick="imgChange(document.getElementById('animalProfile'))"
-            >
-                이미지 변경(랜덤)
-            </button>
-            <button 
-                type="button"
-                onclick="textAppend(document.getElementById('animalProfileContents'))"
-            >
-                글  추가
-            </button>
-            <button 
-                type="button"
-                onclick="boxResize(document.getElementById('animalProfileBox'))"
-            >
-                프로필 박스 크기 변경(랜덩)
-            </button>
-        </article>
         <section class="animal-profile-container font-arial"> 
-            <div class="wrap w-50p">
-                <article 
-                    class="animal-profile-box"
-                    id="animalProfileBox"
+            <article 
+                class="animal-profile-box"
+                id="animalProfileBox"
+            >
+                <img 
+                    class="animal-profile vertical-sub"
+                    src="../images/animal09.png"
+                    alt="animal"
+                    id="animalProfile"
+                />
+                <img 
+                    class="animal-profile-decoration vertical-sub"
+                    src="../images/green.png"
+                    alt="animal decoration"
+                />
+                <div 
+                    class="animal-profile-contents"
+                    id="animalProfileContents"
                 >
-                    <img 
-                        class="animal-profile vertical-sub"
-                        src="../images/animal09.png"
-                        alt="animal"
-                        id="animalProfile"
-                    />
-                    <div 
-                        class="animal-profile-contents"
-                        id="animalProfileContents"
-                    >
-                        <h2 class="animal-profile-title">
-                            Squirrel    
-                        </h2>
-                        <p class="animal-profile-description">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec 
-                        </p>
-                    </div>
-                </article>
-            </div>
+                    <h2 class="animal-profile-title">
+                        Squirrel    
+                    </h2>
+                    <p class="animal-profile-description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec 
+                    </p>
+                </div>
+            </article>
         </section>
     </body>
 </html>

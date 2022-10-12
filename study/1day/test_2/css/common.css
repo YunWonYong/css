@@ -3,14 +3,6 @@ body, h2, p {
     margin: 0;
 }
 
-.wrap {
-    margin: 0 auto;
-}
-
-.w-50p {
-    width: 50%;
-}
-
 .vertical-sub {
     vertical-align: sub;
 }
@@ -24,4 +16,9 @@ body, h2, p {
     left: 0;
     top: 0;
     padding: 10px;
+    opacity: 0.1;
+}
+
+.test-btn-box button:nth-child(2) {
+    margin: 0 10px;
 }
