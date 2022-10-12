@@ -1,8 +1,8 @@
-# css
+# CSS
 Repository for understanding the company's outsourcing web publishing CSS code
 
-# feedback
-### 2022-10-10 #1
+# 빔캠프
+### 2022-10-10 #1 (feedback) 
 1. comment node DOM 개념이니 별도로 알아보기
 2. unset과 revert 정리하기
 3. css selector combinator 알아보기    
