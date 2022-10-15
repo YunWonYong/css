@@ -1,0 +1,85 @@
+.profile {
+    width: 100vw;
+}
+
+.profile[data-bg="1"] {
+    background-image: url(../img/background01.png);
+}
+
+.profile[data-bg="2"] {
+    background-image: url(../img/background02.png);
+}
+
+.profile[data-bg="3"] {
+    background-image: url(../img/background03.png);
+}
+
+.profile-box {
+    height: 100vh;
+    padding: 10% 0;
+}
+
+.profile-box[data-number="1"] > .profile-header {
+    background-image: url(../img/cover01.png);
+}
+
+.profile-box[data-number="2"] > .profile-header {
+    background-image: url(../img/cover02.png);
+}
+
+.profile-box[data-number="3"] > .profile-header {
+    background-image: url(../img/cover03.png);
+}
+
+.profile-header {
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+}
+
+
+.profile-header-pickture {
+    border: 5px solid white;
+    border-radius: 16em / 7em; /* inherit: no, initialValue: 0 */
+    width: 170px;
+}
+
+.profile-header-title {
+    margin-bottom: 10px;
+    font-size: 80px;
+    font-weight: bold;
+    text-indent: 3px; /* inherit: ok, initalValue: 0 */
+    letter-spacing: 3px; /* inherit: ok, initalValue: normal */
+}
+
+.profile-header-description {
+    display: inline-block;
+    border-top: 3px solid white; 
+    padding-top: 10px;
+    /* 
+        padding보다 상위 영역이 border라 padding 영역을 설정하여
+        border 영역과 contents 영역의 사이를 조절할 수 있음
+    */
+    font-size: 14px;
+    font-weight: 700;
+    text-indent: 0.3em;
+    letter-spacing: 0.3em;
+}
+
+.profile-contents {
+    background-color: rgb(183 183 183);
+    padding: 20px;
+}
+
+.profile-footer {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.profile-footer-description {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1em;
+    color: rgb(227, 227, 227);
+}

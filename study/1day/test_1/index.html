@@ -8,7 +8,7 @@
         <!-- element end -->
         <style>
             body, h2, p {
-                margin: initial; /* margin의 initail value는 0 이고 initial은 그 초기 값을 좀 더 명시적으로  */
+                margin: initial; /* margin의 initial value는 0 이고 initial은 그 초기 값을 좀 더 명시적으로  */
             }
 
             h2 {
@@ -24,7 +24,7 @@
                 background-color: #999;
             }
             /* 
-                type select = div, p, h1 등등 
+                type selector = div, p, h1 등등 
             */
             /*
                 유니버셜 selector *
@@ -36,9 +36,9 @@
                 /* 
                     width: auto; => margin, padding, border 을 계산해서 width를 설정한다.
                     initail value 초기갑 상속이 아니고 부모의 contents 영역을 받아오는 것 
-                    부모가 제공하는 contents 영역을 contain block 이라 한다.
+                    부모가 제공하는 contents 영역을 containing block 이라 한다.
                     height: auto;
-                    자식이 기준으로 설정되고 height: 100%;는 부모가 제공한 contain block
+                    자식이 기준으로 설정되고 height: 100%;는 부모가 제공한 containing block
                     부모가 auto고 자식 100%d인 경우 0에 수렵한다.
                 */
                 margin: 0 auto; /* initali value 0 */  
@@ -47,8 +47,8 @@
 
             .section-header {
                 background-image: url(images/cover03.png);
-                color: white; /* 상속이 지원되기 때문에 자식들도 white로 된다. color initail value는 canversColor 다 */
-                /* color인 경우 상속은 initail value보다 우선순위가 높다. */
+                color: white; /* 상속이 지원되기 때문에 자식들도 white로 된다. color initial value는 canversColor 다 */
+                /* color인 경우 상속은 initial value보다 우선순위가 높다. */
             }
 
             .section-footer {

@@ -1,84 +1,274 @@
 <!doctype html>
 <html>
     <head>
+        <!-- Escapable raw text elements ref=https://html.spec.whatwg.org/multipage/syntax.html#elements-2 -->
         <title>
             First lecture #1
         </title>
         <link href="./css/common.css" rel="stylesheet"/>
-        <link href="./css/profile/header.css" rel="stylesheet"/>
-        <link href="./css/profile/contents.css" rel="stylesheet"/>
-        <link href="./css/profile/footer.css" rel="stylesheet"/>
+        <link href="./css/profile.css" rel="stylesheet"/>
+        <script>
+            const init = () => {
+                let currentProfileID = 1;
+                let actionFlag = true;
+                let tick = null;
+                window.addEventListener("mousewheel", event => {
+                    if (actionFlag === false) {
+                        return;
+                    }
+                    const { deltaY } = event;
+                    if (currentProfileID === 3 && deltaY > 0 || currentProfileID === 1 && deltaY < 0 ) {
+                        return;
+                    }
+                    clearTimeout(tick);
+                    actionFlag = false;
+                    currentProfileID += deltaY > 0 ? 1: -1;
+                    const target = document.querySelector(`.profile-box[data-number="${currentProfileID}"]`);
+                    target.scrollIntoView();
+                    document.getElementById("profile").setAttribute("data-bg", currentProfileID);
+                    tick = setTimeout(() => {
+                        actionFlag = true;
+                    }, 500);
+                });
+            };
+        </script>
     </head>
-    <body>
-        <section class="profile">
-            <div class="wrap"> 
-                <header class="profile-header">
-                    <img 
-                        src="./img/profile.png" 
-                        alt="profile img" 
-                        class="profile-header-img"
-                    />
-                    <h2 class="profile-header-title">
-                        JANE DOE
-                    </h2>
-                    <p class="profile-header-description">
-                        FRONT-END DESIGNER
-                    </p>
-                </header>
-                <div class="profile-contents">
-                    <div class="profile-content-box">
-                        <div class="left">
-                            <h3 class="profile-content-title">
-                                Information
-                            </h3>
-                            <p class="profile-content">
-                                Yun Wonyong
-                            </p>
-                            <p class="profile-content">
-                               ywyi1992@gmail.com 
-                            </p>
-                            <p class="profile-content">
-                                Seoul, Korea
-                            </p>
+    <body 
+        class="scroll_none"
+        onload="init()"
+    >
+        <section 
+            class="profile bg_img_cover"
+            id="profile"
+            data-bg="1"
+        >
+            <div class="l_wrap">
+                <article 
+                    class="profile-box" 
+                    data-number="1"
+                >
+                    <header class="profile-header bg_img_cover">
+                        <img 
+                            class="profile-header-pickture"
+                            src="./img/profile01.png" 
+                            alt="profile img" 
+                        />
+                        <h2 class="profile-header-title">
+                            JANE DOE
+                        </h2>
+                        <p class="profile-header-description">
+                            FRONT-END DESIGNER
+                        </p>
+                    </header>
+                    <article class="profile-contents">
+                        <div class="box">
+                            <div class="l_left">
+                                <div class="box-title">
+                                    Information
+                                </div>
+                                <ul class="list vertical_pipe">
+                                    <li>
+                                        Emmett S. Agostini
+                                    </li>
+                                    <li>
+                                        EmmettSAgostini@rhyta.com
+                                    </li>
+                                    <li>
+                                        701-869-3492
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="l_right">
+                                <img 
+                                    class="box-icon"
+                                    src="./img/icon/information.png"
+                                    alt="profile information icon"
+                                />
+                            </div>
                         </div>
-                        <div class="right">
-                            <img 
-                                src="./img/icon-information.png" 
-                                alt="profile information icon"
-                                class="profile-content-icon"
-                            />
+                        <div class="box">
+                            <div class="l_left">
+                                <div class="box-title">
+                                    Skills
+                                </div>
+                                <ul class="list vertical_pipe">
+                                    <li>
+                                        React
+                                    </li>
+                                    <li>
+                                        Redux
+                                    </li>
+                                    <li>
+                                        Next
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="l_right">
+                                <img 
+                                    class="box-icon"
+                                    src="./img/icon/skills.png"
+                                    alt="profile skill icon"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div class="profile-content-box">
-                        <div class="left">
-                            <h3 class="profile-content-title">
-                                Skills
-                            </h3>
-                            <p class="profile-content">
-                                Java
-                            </p>
-                            <p class="profile-content">
-                                Go                                
-                            </p>
-                            <p class="profile-content">
-                                Javascript
-                            </p>
+                    </article>
+                    <footer class="profile-footer">
+                        <p class="profile-footer-description">
+                            VEAMCAMP
+                        </p>
+                    </footer>
+                </article>
+                <article 
+                    class="profile-box" 
+                    data-number="2"
+                >
+                    <header class="profile-header bg_img_cover">
+                        <img 
+                            class="profile-header-pickture"
+                            src="./img/profile02.png" 
+                            alt="profile img" 
+                        />
+                        <h2 class="profile-header-title">
+                            JANE DOE
+                        </h2>
+                        <p class="profile-header-description">
+                            FRONT-END DESIGNER
+                        </p>
+                    </header>
+                    <article class="profile-contents">
+                        <div class="box">
+                            <div class="l_left">
+                                <div class="box-title">
+                                    Information
+                                </div>
+                                <ul class="list vertical_pipe">
+                                    <li>
+                                        Kristen M. Jones
+                                    </li>
+                                    <li>
+                                        KristenMJones@dayrep.com
+                                    </li>
+                                    <li>
+                                        315-765-9456
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="l_right">
+                                <img 
+                                    class="box-icon"
+                                    src="./img/icon/information.png"
+                                    alt="profile information icon"
+                                />
+                            </div>
                         </div>
-                        <div class="right">
-                            <img 
-                                src="./img/icon-skills.png" 
-                                alt="profile skills icon"
-                                class="profile-content-icon"
-                            />
+                        <div class="box">
+                            <div class="l_left">
+                                <div class="box-title">
+                                    Skills
+                                </div>
+                                <ul class="list vertical_pipe">
+                                    <li>
+                                        Angular
+                                    </li>
+                                    <li>
+                                        Ngrx
+                                    </li>
+                                    <li>
+                                        Node
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="l_right">
+                                <img 
+                                    class="box-icon"
+                                    src="./img/icon/skills.png"
+                                    alt="profile skill icon"
+                                />
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <footer class="profile-footer">
-                    <p class="profile-footer-description">
-                        VEAMCAMP
-                    </p>
-                </footer>
-            </div>     
+                    </article>
+                    <footer class="profile-footer">
+                        <p class="profile-footer-description">
+                            VEAMCAMP
+                        </p>
+                    </footer>
+                </article>
+                <article 
+                    class="profile-box" 
+                    data-number="3"
+                >
+                    <header class="profile-header bg_img_cover">
+                        <img 
+                            class="profile-header-pickture"
+                            src="./img/profile03.png" 
+                            alt="profile img" 
+                        />
+                        <h2 class="profile-header-title">
+                            JANE DOE
+                        </h2>
+                        <p class="profile-header-description">
+                            FRONT-END DESIGNER
+                        </p>
+                    </header>
+                    <article class="profile-contents">
+                        <div class="box">
+                            <div class="l_left">
+                                <div class="box-title">
+                                    Information
+                                </div>
+                                <ul class="list vertical_pipe">
+                                    <li>
+                                        Susan J. Hawley
+                                    </li>
+                                    <li>
+                                        SusanJHawley@teleworm.us
+                                    </li>
+                                    <li>
+                                        413-622-2730
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="l_right">
+                                <img 
+                                    class="box-icon"
+                                    src="./img/icon/information.png"
+                                    alt="profile information icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="l_left">
+                                <div class="box-title">
+                                    Skills
+                                </div>
+                                <ul class="list vertical_pipe">
+                                    <li>
+                                        Vue
+                                    </li>
+                                    <li>
+                                        Vuex
+                                    </li>
+                                    <li>
+                                        Nuxt
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="l_right">
+                                <img 
+                                    class="box-icon"
+                                    src="./img/icon/skills.png"
+                                    alt="profile skill icon"
+                                />
+                            </div>
+                        </div>
+                    </article>
+                    <footer class="profile-footer">
+                        <p class="profile-footer-description">
+                            VEAMCAMP
+                        </p>
+                    </footer>
+                </article>
+            </div>
         </section>
     </body>
 </html>

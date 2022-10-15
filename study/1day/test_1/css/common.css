@@ -1,28 +1,77 @@
-body, h2, h3, p {
-    margin: initial;
+body, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
 }
 
 body {
-    background-image: url(../img/background.png);
     background-size: cover;
 }
 
-.wrap {
+.l_wrap {
     width: 800px;
-    margin: 50px auto 0;
-    background-color: white;
+    margin: 0 auto;
 }
 
-.left {
+.l_left {
     float: left;
 }
 
-.right {
+.l_right {
     float: right;
 }
 
-.left::after,
-.right::after {
-    content: " ";
-    clear: both;
+.scroll_none {
+    overflow: hidden;
+}
+
+.bg_img_cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*
+.scroll_none {
+    -ms-overflow-style: none;  IE and Edge 
+    scrollbar-width: none; Firefox 
+}
+.scroll_none::-webkit-scrollbar {
+    display: none; Chrome, Safari, Opera
+}
+*/
+
+.box {
+    background-color: white;
+    overflow: hidden;
+    padding: 10px 20px;
+    box-shadow: 1px 2px 3px #00000070;
+}
+
+.box + .box {
+    margin-top: 20px;
+}
+
+.box-title {
+    color: rgb(245, 101, 125);
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.list li {
+    padding-left: 7px;
+    font-size: 18px;
+}
+
+.list.vertical_pipe li {
+    border-left: 3px solid rgb(218, 217, 217);
+}
+
+.list li:hover {
+    border-left-color: rgba(245, 101, 125, 0.596);
+    color:rgba(245, 101, 125, 0.596);
 }
