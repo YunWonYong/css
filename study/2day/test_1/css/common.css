@@ -1,62 +1,37 @@
+*:root {
+    --main-font: "Arial"
+}
+
 body, ul, li, h2 {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: rgb(214, 214, 214);
 }
 
 li {
     list-style: none;
 }
 
-.container {
-    background-color: rgb(214, 214, 214);
-    height: 100vh;
-    position: relative;
-}
-
-.container.font_arial {
-    font-family: Arial;
+.main_font {
+    font-family: var(--main-font);
 }
 
 .wrap {
-    width: 50%;
-    height: 100%;
-    margin: 0 auto;
+    width: 500px;
+    margin: 5% auto;
 }
 
-/* 
-.box[data-radius] {
-    border-radius: attr(data-radius);
-}
-
-.box[data-shadow] {
-    box-shadow: attr(data-shadow);
-}
-
-.box[data-radius]::before {
-    content: attr(data-radius);
-    height: 100px;
-    width: 100px;
-} 
-*/
-
-.box.shadow {
+.box {
     box-shadow: 3px 3px 5px #999;
-}
-
-.box.radius {
-    border-radius: 30px / 30px;
-}
-
-.box.position_absolute_center {
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .box-header {
     background-color: white;
-    border-radius: 30px 30px 0 0 / 30px;
     border-bottom: 5px solid rgb(214, 214, 214);
     padding: 40px 0;
     color: rgb(255, 54, 158);
@@ -71,24 +46,5 @@ li {
 
 .box-contents {
     background-color: rgb(238, 238, 238);
-    border-radius: 0 0 30px 30px / 30px;
     padding: 30px 25px;
-}
-
-.bucket-list > .bucket-list-item {
-    width: 350px;
-    background-color: white;
-    border: 3px solid rgb(164, 164, 164);
-    border-radius: 5px;
-    padding: 10px;
-    font-weight: 500;
-}
-
-.bucket-list > .bucket-list-item + .bucket-list-item {
-    margin-top: 10px;
-}
-
-.bucket-list > .bucket-list-item.clear {
-    border-color: dodgerblue;
-    color: dodgerblue;
 }
