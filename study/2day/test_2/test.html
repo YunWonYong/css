@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            second lecture #1 - My Bucket Lists
+        </title>
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/bucketList.css" />
+        <script>
+            const setup = () => {
+                const bucketListItems = document.getElementsByClassName("bucket-list-item");
+                [...bucketListItems].forEach(item => {
+                    item.addEventListener("click", checkedFn);
+                });
+            };
+
+            const checkedFn = (event) => {
+                const { target } = event;
+                let classList = target.classList;
+                if (!classList.contains("bucket-list-item")) {
+                    classList = target.parentElement.classList;
+                }
+                classList.toggle("is_checked");
+            };
+
+            const itemAppend = () => {
+                const itemAppendor = document.getElementById("itemAppendor");
+                if (itemAppendor.classList.contains("state_disabled")) {
+                    return;
+                }
+                
+                const bucketList = document.getElementById("bucketList");
+                const text = prompt("todo input");
+                if (!text) {
+                    return;
+                }
+
+                const bucketItem = getBucketItem(text);
+                bucketList.appendChild(bucketItem);
+                if (bucketList.children.length === 10) {
+                    itemAppendor.classList.remove("color_addition");
+                    itemAppendor.classList.add("state_disabled");
+                    return;
+                }
+            };
+
+            const getBucketItem = text => {
+                const item = createElement("LI");
+                const checkBox = createElement("DIV");
+                const label = createElement("DIV");
+                label.classList.add("cc_checkbox_label");
+                label.innerText = text;
+                checkBox.classList.add("cc_checkbox", "size_20-20");
+                item.classList.add("bucket-list-item");
+                item.appendChild(checkBox);
+                item.appendChild(label);
+                item.addEventListener("click", checkedFn);
+                return item;
+            };
+
+            const createElement = (type) => document.createElement(type);
+
+        </script>
+    </head>
+    <body onload="setup()">
+        <div class="wrap main_font">
+            <section class="box">
+                <header class="box-header">
+                    <h2 class="box-header-title">
+                        My Bucket List
+                    </h2>
+                    <div class="cc_buttonbox">
+                        <button
+                            class="color_addition" 
+                            type="button"
+                            id="itemAppendor"
+                            onclick="itemAppend()"
+                        >
+                            + ADD
+                        </button>
+                    </div>
+                </header>
+                <article class="box-contents">
+                    <ul 
+                        class="bucket-list"
+                        id="bucketList"
+                    >
+                        <li class="bucket-list-item">
+                            <div class="cc_checkbox size_20-20"></div>
+                            <div class="cc_checkbox_label">
+                                Travel all around the world
+                            </div>
+                        </li>
+                        <li class="bucket-list-item">
+                            <div class="cc_checkbox size_20-20"></div>
+                            <div class="cc_checkbox_label">
+                                Learn a new language
+                            </div>
+                        </li>
+                        <li class="bucket-list-item">
+                            <div class="cc_checkbox size_20-20"></div>
+                            <div class="cc_checkbox_label">
+                                Try a profession in a different field
+                            </div>
+                        </li>
+                        <li class="bucket-list-item">
+                            <div class="cc_checkbox size_20-20"></div>
+                            <div class="cc_checkbox_label">
+                                Achieve your ideal weight
+                            </div>
+                        </li>
+                        <li class="bucket-list-item">
+                            <div class="cc_checkbox size_20-20"></div>
+                            <div class="cc_checkbox_label">
+                                Run a marathon
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+.bucket-list-item {
+    background-color: white;
+    border: 3px solid rgb(164, 164, 164);
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.bucket-list-item + .bucket-list-item {
+    margin-top: 10px;
+}
