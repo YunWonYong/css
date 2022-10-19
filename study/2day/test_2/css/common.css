@@ -3,7 +3,7 @@
     --is-checked-color: dodgerblue;
 }
 
-body, ul, li, h2 {
+body, ul, h2, p {
     margin: 0;
     padding: 0;
 }
@@ -125,4 +125,8 @@ li {
     background-color: #999;
     color: #666;
     cursor: not-allowed;
+}
+
+.footer {
+    margin-top: 20px;
 }

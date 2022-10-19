@@ -1,0 +1,28 @@
+.copyright {
+    padding: 10px 20px;
+    text-align: center;
+    color: rgb(152, 152, 152);
+}
+
+.copyright-title {
+    font-weight: 600;
+}
+
+.copyright-title::before,
+.copyright-title::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    margin-top: 8px;
+    background-color: rgb(181, 181, 181);
+}
+
+.copyright-title::before {
+    float: left;
+    margin-right: -50px;
+}
+
+.copyright-title::after {
+    float: right;
+    margin-left: -50px;
+}
