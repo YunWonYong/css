@@ -4,25 +4,26 @@
     color: rgb(152, 152, 152);
 }
 
-.copyright-title {
+.copyright-header {
+    position: relative;
     font-weight: 600;
+    z-index: -1;
 }
 
-.copyright-title::before,
-.copyright-title::after {
+.copyright-header-title {
+    display: inline-block;
+    background-color: rgb(214, 214, 214);
+    padding: 0 10px;
+}
+
+.copyright-header::before {
+    position: absolute;
+    float: left;
     content: "";
-    width: 30%;
     height: 2px;
+    width: 100%;
     margin-top: 8px;
     background-color: rgb(181, 181, 181);
-}
-
-.copyright-title::before {
-    float: left;
-    margin-right: -50px;
-}
-
-.copyright-title::after {
-    float: right;
-    margin-left: -50px;
+    left: 0;
+    z-index: -1;
 }

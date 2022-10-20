@@ -33,25 +33,33 @@ li {
 
 .box-header {
     display: flex;
-    justify-content: space-between; /* initial value: normal, inherited: no */
     background-color: white;
     border-bottom: 5px solid rgb(214, 214, 214);
     padding: 40px 0;
     color: rgb(255, 54, 158);
+    align-items: center;
+    justify-content: space-between;
 }
 
+
 .box-header-title {
-    line-height: 30px;
+    width: 220px;
+    max-height: 3em;
+    padding-left: 20px;
     font-weight: 900;
+    overflow: hidden;
+    position: relative;
 }
 
 .box-header-title::before {
     content: "";
+    position: absolute;
+    left: 0;
     background-color: rgb(255, 54, 158);
-    margin-right: 25px;
     border-right: 10px solid rgb(255, 54, 158);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    height: 100%;
 }
 
 .box-contents {
@@ -82,6 +90,7 @@ li {
     font-size: 20px;
     margin-left: 10px;
     cursor: pointer;
+    word-break: break-all;
 }
 
 .is_checked > .cc_checkbox {
@@ -98,15 +107,14 @@ li {
 }
 
 .cc_buttonbox {
-    display: flex;
-    justify-content: center;
-    padding: 0 20px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .cc_buttonbox > button {
     border-width: 0;
     border-radius: 5px;
-    padding: 5px 30px;
+    padding: 5px 15px;
     font-weight: 600;
     cursor: pointer;
 }
@@ -117,8 +125,18 @@ li {
     box-shadow: 0px 4px 0px -1px rgb(0, 69, 138);
 }
 
+.cc_buttonbox > button.color_removal {
+    background-color: rgb(255, 50, 74);
+    color: white;
+    box-shadow: 0px 4px 0px -1px rgb(212, 0, 25);
+}
+
 .cc_buttonbox > button.color_addition:active {
     background-color: rgb(0, 69, 138);
+}
+
+.cc_buttonbox > button.color_removal:active {
+    background-color: rgb(212, 0, 25);
 }
 
 .cc_buttonbox > button.state_disabled {
@@ -127,6 +145,22 @@ li {
     cursor: not-allowed;
 }
 
+.cc_buttonbox.sort_right > button:last-child {
+    margin-right: 5px;
+}
+
 .footer {
     margin-top: 20px;
+}
+
+.sort_right {
+    float: right;
+}
+
+.size_w_80Per {
+    width: 80%;
+}
+
+.size_w_90Per {
+    width: 90%;
 }

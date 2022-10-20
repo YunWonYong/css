@@ -1,4 +1,6 @@
 .bucket-list-item {
+    display: flex;
+    align-items: center;
     background-color: white;
     border: 3px solid rgb(164, 164, 164);
     border-radius: 5px;

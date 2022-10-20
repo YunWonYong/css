@@ -49,7 +49,7 @@
                 const item = createElement("LI");
                 const checkBox = createElement("DIV");
                 const label = createElement("DIV");
-                label.classList.add("cc_checkbox_label");
+                label.classList.add("cc_checkbox_label", "size_w_90Per");
                 label.innerText = text;
                 checkBox.classList.add("cc_checkbox", "size_20-20");
                 item.classList.add("bucket-list-item");
@@ -61,6 +61,10 @@
 
             const createElement = (type) => document.createElement(type);
 
+            const itemPop = () => {
+
+            };
+
         </script>
     </head>
     <body onload="setup()">
@@ -68,9 +72,10 @@
             <section class="box">
                 <header class="box-header">
                     <h2 class="box-header-title">
-                        My Bucket List
+                        My Bucket List<br />
+                        2022-10-20
                     </h2>
-                    <div class="cc_buttonbox">
+                    <div class="cc_buttonbox sort_right">
                         <button
                             class="color_addition" 
                             type="button"
@@ -78,6 +83,14 @@
                             onclick="itemAppend()"
                         >
                             + ADD
+                        </button>
+                        <button
+                            class="color_removal" 
+                            type="button"
+                            id="itemAppendor"
+                            onclick="itemPop()"
+                        >
+                            - REMOVE
                         </button>
                     </div>
                 </header>
@@ -88,31 +101,31 @@
                     >
                         <li class="bucket-list-item">
                             <div class="cc_checkbox size_20-20"></div>
-                            <div class="cc_checkbox_label">
+                            <div class="cc_checkbox_label size_w_90Per">
                                 Travel all around the world
                             </div>
                         </li>
                         <li class="bucket-list-item">
                             <div class="cc_checkbox size_20-20"></div>
-                            <div class="cc_checkbox_label">
-                                Learn a new language
+                            <div class="cc_checkbox_label size_w_90Per">
+                                223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213223nwjifnwoenbfireb2fu9bg923b9213
                             </div>
                         </li>
                         <li class="bucket-list-item">
                             <div class="cc_checkbox size_20-20"></div>
-                            <div class="cc_checkbox_label">
+                            <div class="cc_checkbox_label size_w_90Per">
                                 Try a profession in a different field
                             </div>
                         </li>
                         <li class="bucket-list-item">
                             <div class="cc_checkbox size_20-20"></div>
-                            <div class="cc_checkbox_label">
+                            <div class="cc_checkbox_label size_w_90Per">
                                 Achieve your ideal weight
                             </div>
                         </li>
                         <li class="bucket-list-item">
                             <div class="cc_checkbox size_20-20"></div>
-                            <div class="cc_checkbox_label">
+                            <div class="cc_checkbox_label size_w_90Per">
                                 Run a marathon
                             </div>
                         </li>
@@ -121,9 +134,11 @@
             </section>
             <footer class="footer">
                 <div class="copyright">
-                    <p class="copyright-title">
-                        &#169; 2022 GlennLee
-                    </p>
+                    <header class="copyright-header">
+                        <z class="copyright-header-title">
+                            &#169; 2022 GlennLee
+                        </p>
+                    </header>
                 </div>
             </footer>
         </div>
