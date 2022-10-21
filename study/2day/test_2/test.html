@@ -36,6 +36,13 @@
                     return;
                 }
 
+                
+                const itemRemover = document.getElementById("itemRemover");
+                if (itemRemover.classList.contains("state_disabled")) {
+                    itemRemover.classList.add("color_removal");
+                    itemRemover.classList.remove("state_disabled");
+                }
+
                 const bucketItem = getBucketItem(text);
                 bucketList.appendChild(bucketItem);
                 if (bucketList.children.length === 10) {
@@ -62,6 +69,26 @@
             const createElement = (type) => document.createElement(type);
 
             const itemPop = () => {
+                const itemRemover = document.getElementById("itemRemover");
+                const bucketList = document.getElementById("bucketList");
+                let targetIndex = bucketList.children.length;
+                if (targetIndex === 0) {
+                    return;
+                } 
+
+                
+                const itemAppendor = document.getElementById("itemAppendor");
+                if (itemAppendor.classList.contains("state_disabled")) {
+                    itemAppendor.classList.add("color_addition");
+                    itemAppendor.classList.remove("state_disabled");
+                }
+
+                targetIndex--;
+                bucketList.removeChild(bucketList.children[targetIndex]);
+                if (targetIndex === 0 ) {
+                    itemRemover.classList.remove("color_removal");
+                    itemRemover.classList.add("state_disabled");
+                }
 
             };
 
@@ -87,7 +114,7 @@
                         <button
                             class="color_removal" 
                             type="button"
-                            id="itemAppendor"
+                            id="itemRemover"
                             onclick="itemPop()"
                         >
                             - REMOVE
