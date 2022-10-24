@@ -1,0 +1,100 @@
+.citrus-list li {
+    display: inline-block;
+    margin-right: 1em;
+    text-align: center;
+}
+.citrus-list.item_cycle li {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    vertical-align: top;
+}
+
+.citrus-list.item_cycle li img {
+    width: 100%;
+    height: 100%;
+}
+
+.citrus-list.item_cycle li span {
+    display: inline-block;
+    margin: 0 auto;
+    font-weight: 500;
+    vertical-align: sub;
+    line-height: 12;
+    letter-spacing: 5px;
+    text-indent: 5px;
+}
+
+.citrus-list.item_cycle li[data-type="lemon"] {
+    color: yellow;
+}
+
+.citrus-list.item_cycle li[data-type="orange"] {
+    color: orange;
+}
+
+.citrus-list.item_cycle li[data-type="jamong"] {
+    color: orangered;
+}
+
+.citrus-list.item_cycle li[data-type]:hover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.citrus-list.item_cycle li[data-type="lemon"]:hover {
+    background-image: url(../img/lemon.png);
+}
+
+.citrus-list.item_cycle li[data-type="orange"]:hover {
+    background-image: url(../img/orange.png);
+}
+
+.citrus-list.item_cycle li[data-type="jamong"]:hover {
+    background-image: url(../img/jamong.png);
+}
+
+.citrus-list.item_cycle li[data-type]:hover span {
+    visibility: hidden;
+}
+
+.citrus-contants {
+    min-height: 400px;
+    position: relative;
+    background-color: white;
+    border-radius: 30px;
+    padding-left: 50px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.citrus-contants::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/contents-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    z-index: -1;
+}
+
+.citrus-contants-header {
+    padding: 50px 0 30px;
+}
+
+.citrus-contants-header-title {
+    color: rgb(255, 119, 0);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.citrus-contants-description {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.9;
+}
