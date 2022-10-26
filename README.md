@@ -42,3 +42,14 @@
 2. position property의 absolute는 마지막 선택지로 생각하기
 3. 자식 요소에 의해 부모 요소의 레이아웃에 영향을 주면 안 된다.
 4. class 명이 최대한 안 겹치도록 주제에 맞는 prefix를 사용해 실수 줄이기
+
+## 이 주 두 번쨰 과제
+### 2022-10-20 feedback
+![결과물](https://user-images.githubusercontent.com/59129553/198076760-0e8fc8a5-6758-4b50-b404-da8b8af2d46f.png)
+#### #1
+1. css property 중 적용되지 않는 것은 제거하기
+2. color property는 currentColor라는 값을 사용해서 부모에서 설정한 값을 참조할 수 있다.    
+   (border-color property의 initial value는 currentColor 다.)
+3. button element의 initial value 확인 하기
+4. 복잡한 selector일 경우 부모 element에 css property를 추가해서 해결할 수 있는지 생각하기
+5. 마크업 단순화 생각하기
