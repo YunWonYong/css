@@ -1,0 +1,27 @@
+.oak {
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.oak > .cc_header {
+    background-image: url(../img/header-bg.png);
+}
+
+.oak-header {
+    background-image: url(../img/container-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 45px;
+    background-size: contain;
+    border: 30px solid;
+    border-bottom: 0;
+    padding: 40px;
+}
+
+.oak-header-description {
+    width: 480px;
+    margin-top: 50px;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.8;
+}
