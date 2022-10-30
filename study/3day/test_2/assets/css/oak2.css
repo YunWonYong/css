@@ -1,0 +1,63 @@
+.oak {
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.oak-header {
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+}
+
+.oak-header-contents {
+    background-image: url(../img/container-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 30px;
+    background-position-x: 90%;
+    border: 20px solid;
+    border-bottom: 0;
+    padding: 30px;
+}
+
+.oak-header-contents-title {
+    display: inline-block;
+    margin-bottom: 40px; 
+    border-bottom: 3px solid;
+    font-size: 1.6em;
+    font-weight: 500;
+    letter-spacing: 8px;
+}
+
+.oak-header-contents-description {
+    width: 390px;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.oak-contents {
+    padding: 20px 0;
+    background-color: gainsboro;
+}
+
+.oak-contents-video {
+    background-color: currentColor;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.oak-contents-video-title {
+    background-color: white;
+    padding: 10px;
+}
+
+.oak-contents-video-thumbnail {
+    width: 100%;
+}
+
+.oak-footer {
+    border-top: 5px solid #999;
+    padding-top: 10px;
+}

@@ -1,0 +1,32 @@
+body, h1, p, figure, figcaption {
+    margin: 0;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+.l_wrap {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.l_grid {
+    display: flex;
+    flex-direction: column; /* initial value: row, inherited: no, applies: flex containers */
+}
+
+.l_row {
+    display: inline-flex;
+    flex-wrap: wrap; /* initial value: nowrap, inherited: no  */
+    justify-content: space-between;
+    row-gap: 40px;
+}
+
+.l_col {
+    width: 30%;
+}
+
+.u_font-7bold {
+    font-weight: 700;
+}
