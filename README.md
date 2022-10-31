@@ -53,3 +53,7 @@
 3. button element의 initial value 확인 하기
 4. 복잡한 selector일 경우 부모 element에 css property를 추가해서 해결할 수 있는지 생각하기
 5. 마크업 단순화 생각하기
+
+
+
+124124124
