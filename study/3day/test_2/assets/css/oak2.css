@@ -27,7 +27,6 @@
     margin-bottom: 40px; 
     border-bottom: 3px solid;
     font-size: 1.6em;
-    font-weight: 500;
     letter-spacing: 8px;
 }
 
@@ -42,22 +41,8 @@
     background-color: gainsboro;
 }
 
-.oak-contents-video {
-    background-color: currentColor;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.oak-contents-video-title {
-    background-color: white;
-    padding: 10px;
-}
-
-.oak-contents-video-thumbnail {
-    width: 100%;
-}
-
 .oak-footer {
     border-top: 5px solid #999;
-    padding-top: 10px;
+    padding: 10px 0;
+    text-align: center;
 }

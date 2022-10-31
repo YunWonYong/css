@@ -1,32 +1,91 @@
-body, h1, p, figure, figcaption {
+body, h1, h3, p, figure, figcaption {
     margin: 0;
 }
 
-h1 {
+h1, h3 {
+    display: inline-block;
+    font-size: inherit;
     font-weight: 100;
 }
 
 .l_wrap {
-    width: 900px;
+    width: 800px;
     margin: 0 auto;
 }
 
 .l_grid {
     display: flex;
     flex-direction: column; /* initial value: row, inherited: no, applies: flex containers */
+    row-gap: 30px;
 }
 
 .l_row {
     display: inline-flex;
     flex-wrap: wrap; /* initial value: nowrap, inherited: no  */
+    /* justify-content: space-between; */
+    row-gap: inherit;
+}
+
+.l_row.one__third .l_col {
+    width: 31%;
+}
+
+.l_row.one__quarter .l_col {
+    width: 24%;
+}
+
+.l_row.one__third .l_col:nth-child(3n - 1) {
+    margin: 0 3.5%;
+}
+
+.l_row.one__quarter .l_col:nth-child(4n - 2) {
+    margin-left: 1.25%;
+    margin-right: 0.75%;
+}
+
+.l_row.one__quarter .l_col:nth-child(4n - 1) {
+    margin-left: 0.75%;
+    margin-right: 1.25%;
+}
+
+.cc_box {
+    background-color: currentColor;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cc_box-contents { 
+    background-color: white;
+    padding: 10px;
+    display: flex;
     justify-content: space-between;
-    row-gap: 40px;
+    align-items: center;
 }
 
-.l_col {
-    width: 30%;
-}
-
-.u_font-7bold {
+.cc_main_title {
     font-weight: 700;
+}
+
+.cc_sub_title {
+    font-weight: 500;
+}
+
+.cc_copyright {
+    color: rgb(205, 205, 205);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1em;
+}
+
+.u_font12s {
+    font-size: 12px;
+}
+
+.icon-play {
+    width: 40px;
+    height: 20px;
+    background-image: url(../img/play.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
 }
