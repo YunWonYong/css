@@ -1,0 +1,127 @@
+body, h1, h2, p, ul {
+    margin: 0;
+}
+
+h1, h2 {
+    display: inline-block;
+    font-size: medium;
+    font-weight: 100;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    all: unset;
+}
+
+.l_wrap {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.cc_iconbox {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.cc_iconbox img {
+    width: 15px;
+    padding-right: 10px;
+    vertical-align: bottom;
+}
+
+.cc_list {
+    background-color: rgb(30, 29, 29);
+    border-top: 1px solid;
+    padding: 10px 0 20px 10px;
+    color: rgb(255, 162, 178);
+}
+
+.cc_list-category {
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.cc_list li {
+    margin-left: 10px;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(200, 200, 200);
+    cursor: pointer;
+}
+
+.cc_list li:nth-child(2n + 1) {
+    border-top: 1px solid rgb(99, 99, 99);
+    border-bottom: 1px solid rgb(130, 130, 130);
+}
+
+.cc_grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.cc_row {
+    display: flex;
+}
+
+.cc_row.one__third .cc_col {
+    width: 30%;
+}
+
+.cc_row.one__third .cc_col:nth-child(3n - 1) {
+    margin: 0 5%;
+}
+
+.cc_videobox {
+    height: 100%;
+    position: relative;
+    background-color: rgb(37, 37, 37);
+    border-radius: 5px;
+    overflow: hidden;
+    user-select: none;
+}
+
+.cc_videobox-thumbnail {
+    width: 100%;
+    vertical-align: top;
+}
+
+.cc_videobox-contents {
+    padding: 20px 20px 50px;
+}
+
+.cc_videobox-contents-title {
+    padding-bottom: 10px;
+    color: rgb(251, 205, 213);
+    font-weight: 600;
+}
+
+.cc_videobox-contents-description {
+    padding-bottom: 25px;
+    font-size: 14px;
+}
+
+.cc_videobox-playbtn {
+    width: 95%;
+    position: absolute;
+    bottom: 15px;
+    left: 2.5%;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px 0;
+    color: orangered;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-indent: 3px;
+    cursor: pointer;
+}
