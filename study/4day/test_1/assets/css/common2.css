@@ -1,0 +1,45 @@
+body, h1, h2, p, ul {
+    margin: 0;
+}
+
+h1, h2 {
+    display: inline-block;
+    font-size: medium;
+    font-weight: 100;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    all: unset;
+}
+
+.l_wrap {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.cc_grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.cc_row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cc_row.one__third .cc_col {
+    width: 30%;
+}
+
+.cc_col {
+    flex-shrink: 0;
+}
