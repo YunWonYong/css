@@ -1,0 +1,14 @@
+body, h2 {
+    margin: 0;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+    text-align: center;
+}
+
+.l_wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
