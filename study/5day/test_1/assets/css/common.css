@@ -12,3 +12,15 @@ a {
     width: 1200px;
     margin: 0 auto;
 }
+
+.cc_grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.cc_row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}

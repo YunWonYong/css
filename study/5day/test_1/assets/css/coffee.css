@@ -5,7 +5,6 @@
 
 .coffee {
     display: flex;
-    height: 600px;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 5px 1px 10px 2px rgb(202, 202, 202);
@@ -15,11 +14,9 @@
     display: flex;
     flex-direction: column;
     width: 20%;
-    flex-shrink: 1;
     background-image: url(../img/sidebar-background.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: bottom;
+    background-position: center;
     padding: 10px 30px;
     row-gap: 20px;
 }
@@ -57,7 +54,44 @@
 .coffee-contents {
     flex-grow: 1;
     background-color: white;
+    padding: 20px;
 }
+
+.coffee-contents .cc_titleBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coffee-contents .cc_titleBox .link {
+    border-radius: 15px;
+    padding: 3px 10px;
+    font-size: 12px;
+}
+
+.coffee-contents-about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coffee-contents-about img {
+    flex-grow: 1;
+    max-width: 120px;
+}   
+
+.coffee-contents-reviews {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    column-gap: 30px;
+}
+
+.coffee-contents-reviews div {
+    background-color: #999;
+    color: #666;
+    border-radius: 5px;
+}
+
 
 .cc_titleBox {
     color: grey;
@@ -78,6 +112,6 @@
 }
 
 .link {
-    background-color: gainsboro;
+    background-color: rgb(232, 232, 232);
     color: gray;
 }
