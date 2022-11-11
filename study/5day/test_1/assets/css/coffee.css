@@ -16,7 +16,8 @@
     width: 20%;
     background-image: url(../img/sidebar-background.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
+    background-position: bottom;
     padding: 10px 30px;
     row-gap: 20px;
 }
@@ -76,29 +77,52 @@
 
 .coffee-contents-about img {
     flex-grow: 1;
-    max-width: 120px;
+    max-width: 150px;
 }   
 
 .coffee-contents-reviews {
     display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
-
-.coffee-contents-reviews div {
-    background-color: #999;
-    color: #666;
-    border-radius: 5px;
-}
-
 
 .cc_titleBox {
-    color: grey;
+    color: rgb(204, 204, 204);
     margin-bottom: 5px;
     border-bottom: 10px solid rgb(215, 215, 215);
     font-size: 20px;
     font-weight: 900; /* initial value normal, inherited yes */
+}
+
+.cc_review {
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 29%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.cc_review:nth-child(3n - 1) {
+    margin: 0 auto;
+}
+
+.cc_review p {
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-height: 230px;
+    overflow: hidden;
+    color: rgb(138, 138, 138);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cc_review h4 {
+    text-align: right;
 }
 
 .link.main {

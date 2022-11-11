@@ -1,7 +1,7 @@
 .animal-profile-container {
     text-align: center;
     min-height: 100vh;
-    background-image: url(../../images/bg.png);
+    background-image: url(../img/bg.png);
     background-repeat: no-repeat; /* initialValue: repeat, inherited: no */
     background-size: cover; /* initialValue: auto, inherited: no */
     padding-top: 5%;

@@ -1,4 +1,4 @@
-body, h2 {
+body, h2, h4, p {
     margin: 0;
 }
 
@@ -9,18 +9,18 @@ a {
 }
 
 .l_wrap {
-    width: 1200px;
+    width: 1400px;
     margin: 0 auto;
 }
 
 .cc_grid {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    gap: 20px;
 }
 
 .cc_row {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    gap: 20px;
 }
