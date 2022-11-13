@@ -1,0 +1,98 @@
+.coffee {
+    background-image: url(../img/background.png);
+    padding: 30px 0;
+}
+
+.coffee-aside {
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url(../img/sidebar-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 10px 30px;
+}
+
+.coffee-aside-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.coffee-aside-title h1 {
+    color: #ededed;
+    margin-bottom: 5px;
+    border-bottom: 15px solid #4b4b4b;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.coffee-aside-title img {
+    width: 120px;
+}
+
+.coffee-aside-description {
+    color: #949494;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.coffee-aside-linkBox a {
+    display: block;
+    margin: 10px 0;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-indent: 4px;
+}
+
+.coffee-contents {
+    height: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 30px 20px;
+}
+
+.coffee-contents-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 15px solid rgb(242, 242, 242);
+}
+
+.coffee-contents-title h2 {
+    color: rgb(145, 145, 145);
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.coffee-contents-title a {
+    background-color: rgb(242, 242, 242);
+    border-radius: 15px;
+    padding: 2px 15px;
+    font-size: 12px;
+}
+
+.coffee-contents-review {
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    background-color:rgb(233, 233, 233);
+    border-radius: 15px;
+    padding: 20px;
+    color: rgb(147, 147, 147);
+    font-size: 18px;
+}
+
+.coffee-contents-review p {
+    flex-grow: 1;
+}
+
+.coffee-contents-review h4 {
+    margin-top: 10px;
+    text-align: right;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
