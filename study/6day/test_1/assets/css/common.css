@@ -1,0 +1,39 @@
+body, h1, h2, p, figure, ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+  	font-weight: 500;
+}
+
+.l_wrap {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.l_grid {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.l_row {
+  display: flex;
+}
+
+.l_row.gap_row24 {
+  margin: 24px 0;
+}
+
+.l_col.size_12_12 {
+  width: 100%;
+}
