@@ -1,7 +1,5 @@
 .portfolio {
     background-color: #51318b;
-    padding: 100px 0;
-    color: white;
 }
 
 .portfolio-header {
@@ -98,23 +96,3 @@
     color: black;
 }
 
-.cc_imgbox {
-    position: relative;
-}
-
-.cc_imgbox img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-}
-
-.cc_imgbox-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 30px;
-}

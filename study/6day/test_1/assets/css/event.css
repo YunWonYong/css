@@ -1,0 +1,36 @@
+.event {
+    background-color: seashell;
+}
+
+.event-header {
+    padding-bottom: 100px;
+}
+
+.event-header-title {
+    color: salmon;
+    font-size: 40px;
+}
+
+.event-header-title-bg {
+    box-shadow: inset 0px -20px 0 white;
+}
+
+.event-contents-imgbox {
+    height: 100%;
+}
+
+.cc_tagbox {
+    display: flex;
+    column-gap: 3px;
+    padding: 24px 0;
+}
+
+.cc_tagbox span {
+    border-radius: 5px;
+    background-color: #f1e0f8;
+    padding: 5px;
+    color: #673399;
+    font-size: 12px;
+    font-weight: 500;
+    box-sizing: border-box;
+}
