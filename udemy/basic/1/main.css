@@ -1,0 +1,8 @@
+section {
+    background: #ff1b58;    
+}
+
+h1 {
+    color: white;
+    font-family: sans-serif; /* sans-serif, serif, monospace default browser font value */
+}
