@@ -1,5 +1,12 @@
+/* 
+    specificity(명시도)
+    inline > #id > .class and :pseudo-class and [attribute] > <tag> and ::pseudo-element > *
+*/
 #product-overview /* id selector */ {
     background: #ff1b58;    
+}
+.section-title /* class selector */ {
+    color: #2ddf52;
 }
 
 h1 {
@@ -7,6 +14,6 @@ h1 {
     font-family: 'Anton', sans-serif; /* sans-serif, serif, monospace default browser font value */
 }
 
-.section-title /* class selector */ {
-    color: #2ddf52;
+h1 {
+    font-family: sans-serif;
 }
