@@ -4,5 +4,5 @@ section {
 
 h1 {
     color: white;
-    font-family: sans-serif; /* sans-serif, serif, monospace default browser font value */
+    font-family: 'Anton', sans-serif; /* sans-serif, serif, monospace default browser font value */
 }
