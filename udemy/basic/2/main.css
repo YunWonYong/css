@@ -2,6 +2,11 @@
     specificity(명시도)
     inline > #id > .class and :pseudo-class and [attribute] > <tag> and ::pseudo-element > *
 */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 #product-overview /* id selector */ {
     background: #ff1b58;    
 }
@@ -12,8 +17,4 @@
 h1 {
     color: white;
     font-family: 'Anton', sans-serif; /* sans-serif, serif, monospace default browser font value */
-}
-
-h1 {
-    font-family: sans-serif;
 }
