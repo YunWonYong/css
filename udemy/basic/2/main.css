@@ -1,0 +1,12 @@
+#product-overview /* id selector */ {
+    background: #ff1b58;    
+}
+
+h1 {
+    color: white;
+    font-family: 'Anton', sans-serif; /* sans-serif, serif, monospace default browser font value */
+}
+
+.section-title /* class selector */ {
+    color: #2ddf52;
+}
