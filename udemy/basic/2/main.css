@@ -15,7 +15,7 @@ body {
 }
 
 #product-overview /* id selector */ {
-    background: #ff1b58;
+    background: url("./freedom.jpg");
     /* padding: 20px;
     border: 5px black solid;
     margin: 20px; */ /* margin collapsing */
