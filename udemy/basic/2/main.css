@@ -78,3 +78,22 @@ h1 {
     color: #0e4f1f;
     text-decoration: none;
 }
+
+/*
+    pseudo classes: 요소의 상태에따라 새로운 룰을 적용할 수 있음. 콜론(:) 1개
+           elements: 요소의 특정 부분에 새로운 룰을 적용할 수 있음. 콜론(::) 2개
+*/
+.main-nav__item > a:active,
+.main-nav__item > a:hover {
+    color: white;
+}
+
+
+/* p::first-letter {
+    color: red;
+    font-size: 20px;
+} */
+/* .main-nav__item > a::after {
+    content: " (Link)";
+    color: red;
+} */
