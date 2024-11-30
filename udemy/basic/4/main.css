@@ -19,6 +19,14 @@
     font-family: 'Anton', sans-serif; /* sans-serif, serif, monospace default browser font value */
 }
 
+
+
+.plan__list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
 .plan {
     background-color: #d5ffdc;
     text-align: center;
