@@ -1,0 +1,53 @@
+.section-plan {
+    border: 3px solid #0e4f1f;
+    width: 70%;
+    margin: 10px 0;
+    padding: 16px 16px 16px 20px;
+    box-sizing: border-box;
+}
+
+.section-plan:hover {
+    border-color: red;
+}
+
+#plus-plan {
+    margin-top: 40px;
+}
+
+#plus-plan.section-plan {
+    background-color: #b5ffcc;
+}
+
+
+#fee-plan.section-plan {
+    background-color: #dafce0;
+}
+
+#premium-plan.section-plan {
+    background-color: #0e4f1f;
+}
+
+
+.plan__link {
+    text-decoration: none;
+    color: black;
+}
+
+.plan__sub-title {
+    color: #858585;
+}
+
+
+#premium-plan .plan__link,
+#premium-plan .plan__sub-title  {
+    color: white;
+}
+
+
+.plan__description {
+    border: 2px solid #0e4f1f;
+    background-color: white;
+    color: #0e4f1f;
+    font-size: 18px;
+    padding: 6px 12px;
+}
