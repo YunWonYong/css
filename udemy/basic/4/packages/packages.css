@@ -1,53 +1,55 @@
-.section-plan {
-    border: 3px solid #0e4f1f;
-    width: 70%;
-    margin: 10px 0;
-    padding: 16px 16px 16px 20px;
-    box-sizing: border-box;
+main {
+    padding-top: 32px;
 }
 
-.section-plan:hover {
-    border-color: red;
+.package {
+    width: 80%;
+    margin: 16px 0;
+    border: 4px solid #0e4f1f;
+    border-left: none;
 }
 
-#plus-plan {
-    margin-top: 40px;
+.package:hover,
+.pacakge:active {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-color: #ff5454;
 }
 
-#plus-plan.section-plan {
-    background-color: #b5ffcc;
-}
-
-
-#fee-plan.section-plan {
-    background-color: #dafce0;
-}
-
-#premium-plan.section-plan {
-    background-color: #0e4f1f;
-}
-
-
-.plan__link {
+.package a {
     text-decoration: none;
-    color: black;
+    color: inherit;
+    display: block;
+    padding: 32px;
 }
 
-.plan__sub-title {
-    color: #858585;
+.package__subtitle {
+    color: #979797;
 }
 
+.package__info {
+    padding: 16px;
+    border: 1px solid #0e4f1f;
+    font-size: 20px;
+    color: #0e4f1f;
+    background-color: white;
+}
 
-#premium-plan .plan__link,
-#premium-plan .plan__sub-title  {
+#plus {
+    background-color: rgba(213, 255, 220, 0.95);
+}
+
+#fee {
+    background-color: rgba(234, 255, 237, 0.95);
+}
+
+#premium {
+    background-color: rgba(14, 79, 31, 0.95);
+}
+
+#premium .package__title {
     color: white;
 }
 
-
-.plan__description {
-    border: 2px solid #0e4f1f;
-    background-color: white;
-    color: #0e4f1f;
-    font-size: 18px;
-    padding: 6px 12px;
+#premium .package__subtitle {
+    color: #bbb;
 }
