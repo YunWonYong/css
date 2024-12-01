@@ -1,7 +1,8 @@
 #product-overview /* id selector */ {
     /* background: url("./freedom.jpg"); */
     background-image: url("./freedom.jpg");
-    background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
     /* padding: 20px;
     border: 5px black solid;
     margin: 20px; */ /* margin collapsing */
@@ -17,8 +18,8 @@
 }
 
 #product-overview {
-    padding-top: 52px;
     position: relative;
+    /* bottom: 5%; */
 }
 
 #product-overview h1 /* descendant combinator */ {
@@ -27,7 +28,7 @@
     font-family: sans-serif; /* sans-serif, serif, monospace default browser font value */
     position: absolute;
     bottom: 5%;
-    left: 5%;
+    left: 3%;
 }
 
 .plan__list {
