@@ -36,3 +36,10 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+
+
+.parent .child-2  {
+    position: relative;
+    top: 600px;
+    left: 0;
+}
