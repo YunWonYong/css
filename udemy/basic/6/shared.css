@@ -17,6 +17,8 @@ body {
 .main-header {
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     background-color: #2ddf52;
     padding: 8px 16px;
     z-index: 100;
