@@ -6,25 +6,47 @@ const selectPlanButton = document.querySelectorAll(".plan button");
 const toggleButton = document.querySelector(".toggle-button");
 const mobileNav = document.querySelector(".mobile-nav");
 
-selectPlanButton.forEach(planButton => {
-    planButton.addEventListener("click", () => {
-        modal.classList.add("open");
-        backdrop.classList.add("open");
+if (selectPlanButton) {
+    selectPlanButton.forEach(planButton => {
+        planButton.addEventListener("click", () => {
+            modal.classList.add("open");
+            backdrop.classList.add("open");
+        });
     });
-});
+}
 
 backdrop.addEventListener("click", () => {
-    modal.classList.remove("open");
-    backdrop.classList.remove("open");
-    mobileNav.classList.remove("open");
+    if (modal) {
+        modal.classList.remove("open");
+    }
+
+    if (backdrop) {
+        backdrop.classList.remove("open");
+    }
+
+    if (mobileNav) {
+        mobileNav.classList.remove("open");
+    }
 });
 
-modalNoButton.addEventListener("click", () => {
-    modal.classList.remove("open");
-    backdrop.classList.remove("open");
-});
+if (modalNoButton) {
+    modalNoButton.addEventListener("click", () => {
+        if (modal) {
+            modal.classList.remove("open");
+        }
+        
+        if (backdrop) {
+            backdrop.classList.remove("open");
+        }
+    });
+}
 
 toggleButton.addEventListener("click", () => {
-    backdrop.classList.add("open");
-    mobileNav.classList.add("open");
+    if (backdrop) {
+        backdrop.classList.add("open");
+    }
+
+    if (mobileNav) {
+        mobileNav.classList.add("open");
+    }
 });
