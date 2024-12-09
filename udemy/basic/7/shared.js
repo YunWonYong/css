@@ -1,9 +1,10 @@
 const backdrop = document.querySelector(".backdrop");
 const modal = document.querySelector(".modal");
 const modalNoButton = document.querySelector(".modal__action--negative");
-var selectPlanButton = document.querySelectorAll(".plan button");
-console.dir(selectPlanButton);
-// backdrop.style.display = "block";
+const selectPlanButton = document.querySelectorAll(".plan button");
+
+const toggleButton = document.querySelector(".toggle-button");
+const mobileNav = document.querySelector(".mobile-nav");
 
 selectPlanButton.forEach(planButton => {
     planButton.addEventListener("click", (event) => {
@@ -15,9 +16,15 @@ selectPlanButton.forEach(planButton => {
 backdrop.addEventListener("click", () => {
     modal.style.display = "none";
     backdrop.style.display = "none";
+    mobileNav.style.display = "none";
 });
 
 modalNoButton.addEventListener("click", () => {
     modal.style.display = "none";
     backdrop.style.display = "none";
+});
+
+toggleButton.addEventListener("click", () => {
+    backdrop.style.display = "block";
+    mobileNav.style.display = "block";
 });
