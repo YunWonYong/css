@@ -1,0 +1,44 @@
+#household {
+    margin: 0 auto;
+    /* padding: 0.8rem 0; */
+    min-height: 30rem;
+    box-sizing: border-box;
+    /* border: 1px solid black;
+    border-radius: 5px; */
+}
+
+.household__wrap {
+    width: 100%;
+}
+
+.household__table {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.household__table-column {
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 0.5rem 0.3rem;
+    background-color: rgb(85, 200, 175);
+    color: white;
+}
+
+.household__table-column:nth-child(1) {
+    border-radius: 5px 0 0 0;
+}
+
+.household__table-column:nth-child(5) {
+    border-radius: 0 5px 0 0;
+}
+
+.household__table-data {
+    text-align: left;
+    font-size: 0.6rem;
+    padding: 0.3rem 0.1rem;
+}
+
+.household__table-data.row-old {
+    background-color: #c0c0c0;
+    color: black;
+}

@@ -5,8 +5,9 @@
             Household Ledger
         </title>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="widspan=device-widspan, initial-scale=1.0" />
         <link rel="stylesheet" href="./common.css" />
+        <link rel="stylesheet" href="./householdList.css" />
     </head>
     <body>
         <header class="header">
@@ -36,11 +37,59 @@
             </nav>
         </header>
         <main class="main">
-            <section class="household-list">
-                <article>
-
+            <section id="household">
+                <article class="household__wrap">
+                    <div id="householdTable" class="household__table">
+                        <span class="household__table-column">
+                            날짜
+                        </span>
+                        <span class="household__table-column">
+                            장소
+                        </span>
+                        <span class="household__table-column">
+                            대분류
+                        </span>
+                        <span class="household__table-column">
+                            소분류
+                        </span>
+                        <span class="household__table-column">
+                            금액
+                        </span>
+                        <!-- 
+                        <span class="household__table-data">
+                            2024-12-12 10:58:21
+                        </span>
+                        <span class="household__table-data">
+                            암사
+                        </span>
+                        <span class="household__table-data">
+                            생필품
+                        </span>
+                        <span class="household__table-data">
+                            청소기
+                        </span>
+                        <span class="household__table-data">
+                            1,980,000
+                        </span>
+                        <span class="household__table-data">
+                            2024-12-12 10:58:21
+                        </span>
+                        <span class="household__table-data">
+                            암사
+                        </span>
+                        <span class="household__table-data">
+                            생필품
+                        </span>
+                        <span class="household__table-data">
+                            청소기
+                        </span>
+                        <span class="household__table-data">
+                            1,980,000
+                        </span> -->
+                    </div>
                 </article>
             </section>
         </main>
+        <script src="./js/household.js"></script>
     </body>
 </html>
