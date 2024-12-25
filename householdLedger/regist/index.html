@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            Household Ledger - regist
+        </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="widspan=device-widspan, initial-scale=1.0" />
+        <link rel="stylesheet" href="../common.css" />
+        <link rel="stylesheet" href="../form.css" />
+        <link rel="stylesheet" href="./regist.css" />
+
+        <!-- <link rel="stylesheet" href="./householdList.css" /> -->
+    </head>
+    <body>
+        <header class="header">
+            <nav class="header__navigation">
+                <div class="header__navigation-logo">
+                    <a class="header__navigation-logo-link" href="../index.html">
+                        <img class="header__navigation-logo-img" src="../images/householdLedgerLogo.png" alt="household ledger logo"/>
+                    </a>
+                </div>
+                <ul class="header__navigation-items">
+                    <li class="header__navigation-item">
+                        <a href="../index.html">
+                            장부
+                        </a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a href="#">
+                            통계
+                        </a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a href="./index.html">
+                            기록
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section>
+                <table class="household-regist">
+                    <thead>
+                        <tr class="household-regist__tr">
+                            <th colspan="2">
+                                <div class="household-regist__title">
+                                    등록 폼
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="household-regist__tr">
+                            <th class="household-regist__th">
+                                날짜
+                            </th>
+                            <td class="household-regist__td">
+                                <input class="input-box" type="text" name="date"/>
+                            </td>
+                        </tr>
+                        <tr class="household-regist__tr">
+                            <th class="household-regist__th">
+                                위치
+                            </th>
+                            <td class="household-regist__td">
+                                <input class="input-box" type="text" name="location"/>
+                            </td>
+                        </tr>
+                        <tr class="household-regist__tr">
+                            <th class="household-regist__th">
+                                대분류
+                            </th>
+                            <td class="household-regist__td">
+                                <select class="select-box" name="major_category">
+                                    <option value="0">필수 선택</option>
+                                    <option value="1">식비</option>
+                                    <option value="2">생필품</option>
+                                    <option value="3">공과금</option>
+                                    <option value="4">여행</option>
+                                    <option value="5">가구</option>
+                                    <option value="6">직접입력</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="household-regist__tr">
+                            <th class="household-regist__th">
+                                소분류
+                            </th>
+                            <td class="household-regist__td">
+                                <input class="input-box" type="text" name="minor_category"/>
+                            </td>
+                        </tr>
+                        <tr class="household-regist__tr">
+                            <th class="household-regist__th">
+                                금액
+                            </th>
+                            <td class="household-regist__td">
+                                <input class="input-box" type="text" name="cost"/>
+                            </td>
+                        </tr>
+                        <tr class="household-regist__tr">
+                            <th class="household-regist__th">
+                                메모
+                            </th>
+                            <td class="household-regist__td">
+                                <div class="text-input-box" contenteditable="true"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="household-regist__tr">
+                            <td colspan="2">
+                                <div>
+                                    <button class="button-box">
+                                        등록
+                                    </button>
+                                    <button class="button-box">
+                                        초기화
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <article>
+
+                </article>
+            </section>
+        </main>
+    </body>
+</html>

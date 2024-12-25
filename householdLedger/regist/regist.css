@@ -1,0 +1,32 @@
+.household-regist {
+    width: 60%;
+}
+
+.household-regist__title {
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.household-regist__tr {
+    margin: 1rem 0;
+}
+
+.household-regist__th {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+
+    text-align: right;
+    vertical-align: top;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.household-regist__td {
+    width: 79%;
+    padding: 0 0 0 5px;
+    margin: 0;
+
+    text-align: left;
+    vertical-align: top;
+}
